@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Create new match</title>
+        <link href="setup.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../score.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Howzatt!</h1>
+            <form id="match">
+                <p>First Team</p>
+                <input type="text" id="firstteam" class="options" placeholder="Enter name of the first team..." required />
+                <p>Second Team</p>
+                <input type="text" id="secondteam" class="options" placeholder="Enter name of the second team..." required />
+                <p>Toss Winner</p>
+                <select id="tossWinner" class="options" required>
+                    <option value="">Choose Winner of the Toss</option>
+                    <option value="1" id="team1">Team 1</option>
+                    <option value="2" id="team2">Team 2</option>
+                </select>
+                <p>Toss Decision</p>
+                <select id="tossChoice" class="options" required>
+                    <option value="">Bat/Bowl</option>
+                    <option value="1" id="bat">Bat</option>
+                    <option value="2" id="bowl">Bowl</option>
+                </select>
+            </form>
+            <button type="button" value="Submit" form="match" onclick="saveTeams()">Start the Match</button>
+        </main>
+    </body>
+</html>

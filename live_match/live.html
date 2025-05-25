@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New match</title>
+        <link href="live.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../score.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Howzatt!</h1>
+            <h2 id="score"><span id="batteam">Team1</span> <span id="currentruns">0</span>/<span id="currentwickets">0</span> (<span id="currentovers">0.0</span>) vs. <span id="bowlteam">Team2</span> <span id="otherteam"><span id="prevruns">Score</span>/<span id="prevwickets">Wickets</span> (<span id="prevovers">0.0</span>)</span></h2>
+            <h2 id="runRate">CRR=<span id="currentRunRate">--.--</span> <span id="RRR">RRR=<span id="requiredRunRate">00.00</span></span></h2>
+            <table id="livescore">
+                <tr>
+                    <th>Batsman</th>
+                    <th>Runs</th>
+                    <th>Balls</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>Strike Rate</th>
+                </tr>
+                <tr id="batsman1">
+                    <td id="bat1">Rohit Sharma</td>
+                    <td id="run1">0</td>
+                    <td id="ball1">0</td>
+                    <td id="four1">0</td>
+                    <td id="six1">0</td>
+                    <td id="sr1">0.00</td>
+                </tr>
+                <tr id="batsman2">
+                    <td id="bat2">Shikhar Dhawan</td>
+                    <td id="run2">0</td>
+                    <td id="ball2">0</td>
+                    <td id="four2">0</td>
+                    <td id="six2">0</td>
+                    <td id="sr2">0.00</td>
+                </tr>
+            </table>
+            <table id="bowlScore">
+                <tr>
+                    <th>Bowler</th>
+                    <th>Overs</th>
+                    <th>Maidens</th>
+                    <th>Runs</th>
+                    <th>Wickets</th>
+                    <th>Econ.</th>
+                </tr>
+                <tr id="bowler1">
+                    <td id="bowler">Wasim Akram</td>
+                    <td id="over1">0</td>
+                    <td id="maiden1">0</td>
+                    <td id="conrun1">0</td>
+                    <td id="wick1">0</td>
+                    <td id="econ1">0.00</td>
+                </tr>
+            </table>
+            <div>
+                <button id="0runs" class="runs">0 runs</button>
+                <button id="1run" class="runs">1 runs</button>
+                <button id="2runs" class="runs">2 runs</button>
+                <button id="3runs" class="runs">3 runs</button>
+                <button id="4runs" class="runs">4 runs</button>
+                <button id="6runs" class="runs">6 runs</button>
+                <button id="wicket" class="wickets">Wicket</button>
+            </div>
+            <div>
+                <button id="wide" class="extras">Wide</button>
+            </div>
+            <div>
+                <button id="scorecard" onclick="scorecard()">Scorecard</button>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+* {
+    background-color: lavender;
+}
+
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+}
+
+button {
+    border: 3px solid black;
+    border-radius: 4px;
+    height: 27px;
+    width: 69px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-top: 13px; 
+    cursor: pointer;
+    transition: font-size 0.2s ease-in-out;
+    transition: 0.2s;
+    background-color: rgb(227, 184, 250);
+}
+
+button:hover {
+    font-size: 16.3px;
+}
+
+.runs:hover {
+    background-color: rgb(0, 222, 0);
+    color: lavender;
+}
+
+.wickets:hover{
+    background-color: red;
+    color: lavender;
+}
+
+#scorecard {
+    width: 120px;
+}
+
+#scorecard:hover {
+    background-color: blue;
+    color: lavender;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    background-color: rgb(195, 91, 251);
+    border-radius: 3px;
+}
+
+th, td {
+    min-width: 100px;
+    max-width: 100px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(227, 184, 250);
+    border-radius: 3px;
+}
+
+#runRate {
+    font-size: 20px;
+}
